@@ -1,0 +1,16 @@
+generated: '2026-10-23'
+method: none
+source:
+- https://zapier.com/apps/upworthy/integrations
+- https://n8n.io/integrations/upworthy/
+- https://composio.dev/toolkits/upworthy
+- https://monid.ai/tools/upworthy
+checked:
+- https://composio.dev/toolkits/upworthy
+- https://monid.ai/tools/upworthy
+- https://n8n.io/integrations/upworthy/
+- https://zapier.com/apps/upworthy/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

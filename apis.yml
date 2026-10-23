@@ -1,25 +1,69 @@
 aid: upworthy
+
 name: Upworthy
-description: 'Upworthy is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by nea) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.upworthy.com/wp-content/uploads/sites/2/2025/12/cropped-upworthy-site-icon_2ff506.png?w=192
+
+description: 'Upworthy is a digital media company that creates and curates uplifting, inspirational, and socially relevant content. It focuses on storytelling that resonates with a broad audience, aiming to inspire positive change and share compelling narratives across its website and social platforms. The company leverages data-driven approaches to amplify stories that matter, engaging readers with high-quality articles, videos, and interactive media.'
+
 url: https://raw.githubusercontent.com/api-evangelist/upworthy/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
-- Company
-apis: []
+- Media
+- Content
+- Storytelling
+- Social Impact
+- Digital
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- nea
+
 common:
+- type: Hosts
+  url: hosts/upworthy-hosts.yml
+- type: SignUp
+  url: https://www.upworthy.com/registered-nurse-shares-her-radical-but-distinctly-american-plan-to-stop-gun-violence/
+- type: PrivacyPolicy
+  url: https://www.upworthy.com/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/upworthy
+- type: DomainSecurity
+  url: security/upworthy-domain-security.yml
 - type: Website
   url: https://www.upworthy.com/
+
+apis: []
+
+x-backed-by:
+- nea
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Upworthy website provides no discoverable OpenAPI, GraphQL, or other machine-readable API specifications.
+  evidence:
+    - url: https://www.upworthy.com/openapi.json
+      status: 404
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
